@@ -1,0 +1,133 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 20px;
+}
+
+/* Calculator Container */
+
+.calculator {
+    width: 100%;
+    max-width: 400px;
+    background-color: #1e293b;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* Display */
+
+.calculator-display {
+    width: 100%;
+    min-height: 90px;
+    background-color: #0f172a;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: right;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+/* Button Grid */
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Buttons */
+
+.calculator-btn {
+    border: none;
+    border-radius: 12px;
+    background-color: #334155;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    min-height: 65px;
+    cursor: pointer;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+/* Hover State */
+
+.calculator-btn:hover {
+    opacity: 0.9;
+}
+
+/* Active State */
+
+.calculator-btn:active {
+    transform: scale(0.96);
+}
+
+/* Operator Buttons */
+
+.operator-btn {
+    background-color: #f97316;
+}
+
+/* Equals Button */
+
+.equals-btn {
+    background-color: #22c55e;
+    grid-row: span 2;
+}
+
+/* Clear Button */
+
+.clear-btn {
+    background-color: #ef4444;
+}
+
+/* Delete Button */
+
+.delete-btn {
+    background-color: #64748b;
+}
+
+/* Zero Button */
+
+.zero-btn {
+    grid-column: span 2;
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+    .calculator {
+        padding: 15px;
+    }
+
+    .calculator-btn {
+        min-height: 60px;
+        font-size: 1.1rem;
+    }
+
+    .calculator-display {
+        min-height: 80px;
+        padding: 15px;
+    }
+}

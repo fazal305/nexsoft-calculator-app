@@ -1,0 +1,23 @@
+# OS Files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Temporary Files
+*.tmp
+*.temp
+
+# Environment Files
+.env
+
+# Node Modules (not used currently, but safe to ignore)
+node_modules/
+
+# Build Folders
+dist/
+build/
