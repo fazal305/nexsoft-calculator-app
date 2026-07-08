@@ -1,96 +1,130 @@
 # Nexsoft Calculator App
 
-A responsive calculator application built with HTML5, CSS3, and Vanilla JavaScript for the Nexsoft Solutions Frontend Internship.
+A responsive calculator application built with HTML5, CSS3, and vanilla JavaScript for the Nexsoft Solutions Frontend Internship.
+
+## Live Links
+
+- GitHub Repository: https://github.com/fazal305/nexsoft-calculator-app
+- Live Demo: https://fazal305.github.io/nexsoft-calculator-app/
+
+## Overview
+
+Nexsoft Calculator App is a lightweight browser calculator that performs basic arithmetic operations without using `eval()`.
+
+The project focuses on clean JavaScript logic, safe expression parsing, responsive UI design, keyboard support, and internship-ready project documentation.
 
 ## Features
 
-* Calculator layout with display screen
-* Number buttons (0–9)
-* Arithmetic operations (+, -, *, /)
-* Decimal number support
-* Safe expression evaluation without using eval()
-* Division by zero handling
-* Invalid input validation
-* Clear (C) functionality
-* Delete (DEL) functionality
-* Responsive design for desktop and mobile
-* Modern dark user interface
+- Number buttons from 0 to 9
+- Addition, subtraction, multiplication, and division
+- Decimal number support
+- Chained calculations
+- Clear button
+- Delete button
+- Keyboard input support
+- Safe expression evaluation without `eval()`
+- Division by zero handling
+- Invalid input handling
+- Responsive desktop and mobile layout
+- Touch-friendly calculator buttons
+- Dark modern UI
+- GitHub Pages ready
 
-## Technologies Used
+## Tech Stack
 
-* HTML5
-* CSS3
-* Vanilla JavaScript
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- GitHub Pages
+  Folder Structure
+  nexsoft-calculator-app/
+  index.html
+  style.css
+  script.js
+  README.md
+  LICENSE
+  .gitignore
+  Getting Started
 
-## Project Structure
+Clone the repository:
 
-```text
-nexsoft-calculator-app
-│
-├── index.html
-├── style.css
-├── script.js
-├── README.md
-├── LICENSE
-└── .gitignore
-```
+git clone https://github.com/fazal305/nexsoft-calculator-app.git
 
-## GitHub Repository
+Open the folder:
 
-https://github.com/fazal305/nexsoft-calculator-app
+cd nexsoft-calculator-app
 
-## Live Demo
+Open index.html in your browser.
 
-https://fazal305.github.io/nexsoft-calculator-app/
+No installation or build step is required.
 
-## Requirements Covered
+Keyboard Controls
+Numbers: 0-9
+Operators: + - \* /
+Decimal: .
+Calculate: Enter or =
+Delete: Backspace
+Clear: Escape
+Architecture Notes
 
-### 1. Calculator Layout and Buttons
+The project is split into three core files:
 
-* Display screen
-* Number buttons 0–9
-* Operators (+, -, *, /)
-* Decimal point
-* Equals button
-* Clear button
-* Delete button
+index.html contains the calculator structure and accessible buttons.
+style.css handles the responsive layout, dark UI, button states, and focus states.
+script.js handles input, validation, expression tokenizing, operator precedence, final calculation, and keyboard support.
 
-### 2. Arithmetic Operations
+The calculator avoids eval() by tokenizing the expression and manually calculating multiplication/division before addition/subtraction.
 
-* Addition
-* Subtraction
-* Multiplication
-* Division
-* Chained calculations
-* Decimal support
+Accessibility
 
-### 3. Error Handling
+Accessibility support includes:
 
-* Division by zero protection
-* Invalid expression detection
-* Long result formatting
-* Empty input validation
+Semantic main and section structure
+aria-live display updates
+Accessible labels for calculator actions
+Button type="button" attributes
+Keyboard support
+Visible focus states
+Responsive touch-friendly controls
+Performance
 
-### 4. Clear and Delete
+Performance notes:
 
-* Clear resets calculator
-* Delete removes last character
+No frameworks
+No external libraries
+No images
+Small static files
+GitHub Pages compatible
+Fast load time
+Testing Checklist
 
-### 5. Responsive Design
+Before final submission:
 
-* Mobile friendly
-* Desktop friendly
-* Touch-friendly buttons
-* Scalable display text
-
-## Author
-
-Fazal Abbas
-
-GitHub: https://github.com/fazal305
-
-LinkedIn: https://www.linkedin.com/in/fazal-abbas-4653dg86
-
-## License
-
-This project is licensed under the MIT License.
+Test all number buttons
+Test addition
+Test subtraction
+Test multiplication
+Test division
+Test decimal values
+Test chained calculations
+Test delete button
+Test clear button
+Test keyboard controls
+Test division by zero
+Test mobile responsiveness
+Run JavaScript syntax check:
+node --check script.js
+Lessons Learned
+Building a calculator with vanilla JavaScript
+Handling operator precedence manually
+Avoiding unsafe eval() usage
+Managing calculator state
+Improving keyboard accessibility
+Preparing internship projects for portfolio presentation
+Future Improvements
+Add percentage button
+Add plus/minus toggle
+Add calculation history
+Add copy result button
+Add theme switcher
+Add scientific calculator mode
